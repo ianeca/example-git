@@ -6,13 +6,16 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    myVarName: 'someValue',
+    host: 'https://reqres.in/'
   }
   if (env == 'dev') {
     // customize
+    url: "dev.qateam.com"
     // e.g. config.foo = 'bar';
-  } else if (env == 'e2e') {
+  } else if (env == 'qa') {
     // customize
+    url: "dev.qateam.com"
   }
   return config;
 }
